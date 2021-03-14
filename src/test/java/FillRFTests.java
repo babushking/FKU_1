@@ -8,7 +8,6 @@ public class FillRFTests {
     private String phoneNumber = "2608";
 
 
-
     @Test
     void fillFormTest() {
         openPage();
@@ -18,18 +17,19 @@ public class FillRFTests {
     void openPage() {
         // Открыть форму
         open("http://172.17.249.13/FKU05/");
-        sleep(20000);
+        sleep(40000);
     }
 
     void fillForm() {
         // Заполнить форму
-        $("#loginField-1013-inputEl").setValue(this.login;
+        $("#loginField-1013-inputEl").setValue(this.login);
         $("#loginField-1014-inputEl").setValue(this.password);
         $("#loginField-1015-inputEl").setValue(this.phoneNumber);
         $("#button-1026-tooltipEl").parent().click();
         $("#button-1026").click();
         $("html").shouldHave(Condition.text("Агент:77_Streshneva_A, номер:2608"));
     }
+}
 
 
 
