@@ -23,7 +23,7 @@ public class FillRFTests {
 
     void fillForm() {
         // Заполнить форму
-        $("#loginField-1013-inputEl").setValue(this.loginA);
+        $("#loginField-1013-inputEl").setValue(this.login;
         $("#loginField-1014-inputEl").setValue(this.password);
         $("#loginField-1015-inputEl").setValue(this.phoneNumber);
         $("#button-1026-tooltipEl").parent().click();
