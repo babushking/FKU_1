@@ -17,7 +17,7 @@ public class FillRFTests {
     void openPage() {
         // Открыть форму
         open("http://172.17.249.13/FKU05/");
-        sleep(40000);
+        sleep(20000);
     }
 
     void fillForm() {
@@ -27,7 +27,9 @@ public class FillRFTests {
         $("#loginField-1015-inputEl").setValue(this.phoneNumber);
         $("#button-1026-tooltipEl").parent().click();
         $("#button-1026").click();
+        sleep(5000);
         $("html").shouldHave(Condition.text("Агент:77_Streshneva_A, номер:2608"));
+
     }
 }
 

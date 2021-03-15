@@ -19,7 +19,7 @@ public class AdminRegistration {
     void openPage() {
         // Открыть форму
         open("http://172.17.249.13/FKU05/");
-        sleep(40000);
+        sleep(20000);
     }
 
     void fillForm() {
@@ -28,6 +28,7 @@ public class AdminRegistration {
         $("#loginField-1014-inputEl").setValue(this.passwordAdmin);
         $("#loginField-1015-inputEl").setValue(this.phoneNumberAdmin);
         $("#button-1026-tooltipEl").parent().click();
+        sleep(5000);
         $("#panel-1037-innerCt").shouldHave(Condition.text("Агент:Admin, номер:0000"));
     }
 
