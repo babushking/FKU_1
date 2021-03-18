@@ -5,7 +5,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class AdminRegistration {
+public class AdminRegistrationTests {
     private String loginAdmin= "Admin";
     private String passwordAdmin= "Admin";
     private String phoneNumberAdmin = "0000";
@@ -39,7 +39,7 @@ public class AdminRegistration {
         createdRole();
 
     }
-    // Открыть форму
+    // Регистрация
     void openPages() {
         // Открыть форму
         open("http://172.17.249.13/FKU05/");
