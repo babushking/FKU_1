@@ -6,8 +6,8 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 public class AdminRegistrationTests {
-    private String loginAdmin= "Admin";
-    private String passwordAdmin= "Admin";
+    private String loginAdmin= "sssss";
+    private String passwordAdmin= "sssss";
     private String phoneNumberAdmin = "0000";
 
     @Test
